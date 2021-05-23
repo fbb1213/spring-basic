@@ -38,6 +38,10 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!--            <dependency>-->
+            <!--                <groupId>org.springframework.boot</groupId>-->
+            <!--                <artifactId>spring-boot-starter</artifactId>-->
+            <!--            </dependency>-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
@@ -57,7 +61,31 @@
                 <version>5.1.30</version>
                 <scope>runtime</scope>
             </dependency>
+            <!--<dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.4.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>1.4.200</version>
+                <scope>runtime</scope>
+            </dependency>-->
             <!--整合mybatis end-->
+            <!--aop start -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+                <!--                <version>${spring.version}</version>-->
+                <version>2.4.5</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>1.9.6</version>
+            </dependency>
+            <!--aop end-->
             <!--spring-basic子模块 start-->
             <dependency>
                 <groupId>cn.spring</groupId>
@@ -108,15 +136,15 @@
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
-                <version>3.0.1</version>
-                <scope>provided</scope>
+                <version>3.1.0</version>
+                <!--                <scope>provided</scope>-->
             </dependency>
             <!--https://www.zhihu.com/question/424862578/answer/1518745441-->
-            <dependency>
-                <groupId>jakarta.servlet</groupId>
-                <artifactId>jakarta.servlet-api</artifactId>
-                <version>4.0.3</version>
-            </dependency>
+            <!--            <dependency>-->
+            <!--                <groupId>jakarta.servlet</groupId>-->
+            <!--                <artifactId>jakarta.servlet-api</artifactId>-->
+            <!--                <version>4.0.2</version>-->
+            <!--            </dependency>-->
             <!--jstl依赖-->
             <dependency>
                 <groupId>javax.servlet</groupId>
@@ -129,7 +157,6 @@
 
     <build>
         <pluginManagement>
-
             <plugins>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
@@ -147,6 +174,40 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <!--    <repositories>-->
+    <!--        <repository>-->
+    <!--            <id>aliyun-maven</id>-->
+    <!--            <name>aliyun maven</name>-->
+    <!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
+    <!--            <snapshots>-->
+    <!--                <enabled>false</enabled>-->
+    <!--            </snapshots>-->
+    <!--        </repository>-->
+    <!--        <repository>-->
+    <!--            <id>spring-releases</id>-->
+    <!--            <name>Spring Releases</name>-->
+    <!--            <url>https://repo.spring.io/libs-release-local</url>-->
+    <!--            <snapshots>-->
+    <!--                <enabled>false</enabled>-->
+    <!--            </snapshots>-->
+    <!--        </repository>-->
+    <!--        <repository>-->
+    <!--            <id>spring-milestones</id>-->
+    <!--            <name>Spring Milestones</name>-->
+    <!--            <url>http://repo.spring.io/libs-milestone-local</url>-->
+    <!--            <snapshots>-->
+    <!--                <enabled>false</enabled>-->
+    <!--            </snapshots>-->
+    <!--        </repository>-->
+    <!--    </repositories>-->
+    <!--    <pluginRepositories>-->
+    <!--        <pluginRepository>-->
+    <!--            <id>public</id>-->
+    <!--            <name>Public Repositories</name>-->
+    <!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
+    <!--        </pluginRepository>-->
+    <!--    </pluginRepositories>-->
 
 
 </project>
